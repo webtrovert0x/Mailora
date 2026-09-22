@@ -9,8 +9,8 @@
     <a href="https://cmail-peach.vercel.app"><img src="https://img.shields.io/badge/Live_Demo-cmail--peach.vercel.app-10b981?style=for-the-badge&logo=vercel" alt="Live Demo" /></a>
     <a href="https://github.com/webtrovert0x/Mailora/blob/main/WHITEPAPER.md"><img src="https://img.shields.io/badge/Whitepaper-v1.0_Read-8b5cf6?style=for-the-badge&logo=googledocs" alt="Whitepaper" /></a>
     <a href="https://t.me/MailoraAlertsBot"><img src="https://img.shields.io/badge/Telegram_Bot-@MailoraAlertsBot-0088cc?style=for-the-badge&logo=telegram" alt="Telegram Bot" /></a>
-    <a href="https://scan.botchain.ai/address/0xEB7db04310755A9bBEf1581bd18A3E63733Ac725#code"><img src="https://img.shields.io/badge/BOT_Chain-Chain_ID_677-059669?style=for-the-badge" alt="BOT Chain" /></a>
-    <a href="https://scan.botchain.ai/address/0xEB7db04310755A9bBEf1581bd18A3E63733Ac725#code"><img src="https://img.shields.io/badge/Contract-0xEB7db043...-0284c7?style=for-the-badge" alt="Contract" /></a>
+    <a href="https://scan.botchain.ai/address/0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a#code"><img src="https://img.shields.io/badge/BOT_Chain-Chain_ID_677-059669?style=for-the-badge" alt="BOT Chain" /></a>
+    <a href="https://scan.botchain.ai/address/0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a#code"><img src="https://img.shields.io/badge/Contract-0xC0DE8FE9...-0284c7?style=for-the-badge" alt="Contract" /></a>
     <img src="https://img.shields.io/badge/AI_Engine-Gemini_%2F_Neural_Shield-10b981?style=for-the-badge" alt="AI Engine" />
   </p>
 </div>
@@ -70,7 +70,7 @@ By combining client-side zero-knowledge encryption, decentralized **IPFS** paylo
 | **RPC URL** | `https://rpc.botchain.ai` |
 | **Block Explorer** | [https://scan.botchain.ai](https://scan.botchain.ai) |
 | **Native Currency** | Botcoin (`BOT`, 18 Decimals) |
-| **Deployed Smart Contract** | [`0xEB7db04310755A9bBEf1581bd18A3E63733Ac725`](https://scan.botchain.ai/address/0xEB7db04310755A9bBEf1581bd18A3E63733Ac725#code) |
+| **Deployed Smart Contract** | [`0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a`](https://scan.botchain.ai/address/0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a#code) |
 
 ---
 

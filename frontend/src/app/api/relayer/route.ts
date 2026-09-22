@@ -10,7 +10,7 @@ const formattedKey = (RELAYER_KEY.startsWith('0x') ? RELAYER_KEY : `0x${RELAYER_
 
 export async function POST(request: Request) {
   try {
-    const { action, toAlias, contentCID, alias } = await request.json();
+    const { action, toAlias, contentCID, alias, userAddress, fromAddress } = await request.json();
 
     const account = privateKeyToAccount(formattedKey);
 
@@ -30,11 +30,13 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'Missing toAlias or contentCID' }, { status: 400 });
       }
 
+      const sender = fromAddress || account.address;
+
       const hash = await walletClient.writeContract({
         address: CONTRACT_ADDRESS as `0x${string}`,
         abi: MailoraABI,
-        functionName: 'sendMessage',
-        args: [toAlias, contentCID]
+        functionName: 'sendMessageFor',
+        args: [sender, toAlias, contentCID]
       });
 
       const receipt = await publicClient.waitForTransactionReceipt({ hash });
@@ -55,11 +57,13 @@ export async function POST(request: Request) {
         return NextResponse.json({ error: 'Missing alias' }, { status: 400 });
       }
 
+      const targetUser = userAddress || account.address;
+
       const hash = await walletClient.writeContract({
         address: CONTRACT_ADDRESS as `0x${string}`,
         abi: MailoraABI,
-        functionName: 'registerAlias',
-        args: [alias]
+        functionName: 'registerAliasFor',
+        args: [targetUser, alias]
       });
 
       const receipt = await publicClient.waitForTransactionReceipt({ hash });

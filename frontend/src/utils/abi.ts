@@ -5,10 +5,14 @@ export const MailoraABI = parseAbi([
   "function aliasToAddress(string) view returns (address)",
   "function addressToAlias(address) view returns (string)",
   "function getMyAlias() view returns (string)",
+  "function relayer() view returns (address)",
+  "function owner() view returns (address)",
   
   // Write
   "function registerAlias(string _alias)",
+  "function registerAliasFor(address _user, string _alias)",
   "function sendMessage(string _toAlias, string _contentCID) payable",
+  "function sendMessageFor(address _from, string _toAlias, string _contentCID) payable",
 
   // Events
   "event AliasRegistered(address indexed user, string aliasName)",
@@ -18,7 +22,7 @@ export const MailoraABI = parseAbi([
 export const DecentralizedMailABI = MailoraABI;
 
 // BOT Chain Mainnet Contract Address (can be overridden by NEXT_PUBLIC_CONTRACT_ADDRESS in .env.local)
-export const CONTRACT_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "0xEB7db04310755A9bBEf1581bd18A3E63733Ac725") as `0x${string}`;
+export const CONTRACT_ADDRESS = (process.env.NEXT_PUBLIC_CONTRACT_ADDRESS || "0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a") as `0x${string}`;
 export const DEPLOYMENT_BLOCK = BigInt(process.env.NEXT_PUBLIC_DEPLOYMENT_BLOCK || "0");
 
 export const EXPLORER_BASE_URL = "https://scan.botchain.ai";

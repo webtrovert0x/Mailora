@@ -23,10 +23,11 @@ export function useMailbox() {
   };
 
   const registerGaslessAlias = async (aliasName: string) => {
+    if (!address) throw new Error("Please connect your wallet first");
     const res = await fetch('/api/relayer', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'registerAlias', alias: aliasName })
+      body: JSON.stringify({ action: 'registerAlias', alias: aliasName, userAddress: address })
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || 'Gasless alias registration failed');
@@ -65,10 +66,11 @@ export function useMailbox() {
   };
 
   const sendGaslessMessage = async (toAlias: string, contentCID: string) => {
+    if (!address) throw new Error("Please connect your wallet first");
     const res = await fetch('/api/relayer', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ action: 'sendMessage', toAlias, contentCID })
+      body: JSON.stringify({ action: 'sendMessage', toAlias, contentCID, fromAddress: address })
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.error || 'Gasless dispatch failed');

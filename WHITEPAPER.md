@@ -6,7 +6,7 @@
 **Network:** BOT Chain (Chain ID 677)  
 **Website:** [https://cmail-peach.vercel.app](https://cmail-peach.vercel.app)  
 **GitHub:** [https://github.com/webtrovert0x/Mailora](https://github.com/webtrovert0x/Mailora)  
-**Smart Contract:** [`0xEB7db04310755A9bBEf1581bd18A3E63733Ac725`](https://scan.botchain.ai/address/0xEB7db04310755A9bBEf1581bd18A3E63733Ac725#code)  
+**Smart Contract:** [`0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a`](https://scan.botchain.ai/address/0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a#code)  
 
 ---
 
@@ -107,7 +107,7 @@ To bridge the gap between asynchronous blockchain events and active user engagem
 
 - **Contract Name**: `Mailora.sol`
 - **Compiler**: Solidity `0.8.24` (via Hardhat)
-- **Deployment Address**: [`0xEB7db04310755A9bBEf1581bd18A3E63733Ac725`](https://scan.botchain.ai/address/0xEB7db04310755A9bBEf1581bd18A3E63733Ac725#code)
+- **Deployment Address**: [`0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a`](https://scan.botchain.ai/address/0xC0DE8FE984F889f8a7367BD1DE8DBBBFB05cE13a#code)
 - **Network**: BOT Chain (Chain ID `677`, RPC: `https://rpc.botchain.ai`)
 - **Key Functions**:
   - `registerAlias(string memory _alias)`: Registers a unique human-readable handle.
