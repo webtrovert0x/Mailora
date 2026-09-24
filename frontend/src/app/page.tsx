@@ -114,7 +114,7 @@ export default function Home() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 text-xs font-medium mb-8 backdrop-blur-xl shadow-inner"
         >
           <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-          <span>Powered by BotChain Testnet & Integrated Neural AI</span>
+          <span>Powered by BOT Chain & Integrated Neural AI</span>
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
         </motion.div>
 

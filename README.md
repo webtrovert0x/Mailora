@@ -119,7 +119,7 @@ MONGODB_URI=your_mongodb_connection_string
 # AI Suite (Google Gemini or OpenAI)
 GEMINI_API_KEY=your_gemini_api_key
 
-# Gasless Relayer Key (BotChain Testnet)
+# Gasless Relayer Key (BOT Chain Mainnet)
 BOTCHAIN_RELAYER_KEY=your_relayer_private_key
 
 # Optional: Web2 Email Notification Bridge

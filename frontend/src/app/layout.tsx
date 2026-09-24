@@ -7,7 +7,7 @@ import { Toaster } from 'react-hot-toast'
 export const metadata: Metadata = {
   metadataBase: new URL('https://mailora.xyz'),
   title: 'Mailora - AI-Powered Decentralized Web3 Messaging on BotChain',
-  description: 'Next-generation, end-to-end encrypted Web3 mailbox on BotChain Testnet with AI Smart Compose, threat detection, and summarization.',
+  description: 'Next-generation, end-to-end encrypted Web3 mailbox on BOT Chain with AI Smart Compose, threat detection, and summarization.',
   openGraph: {
     title: 'Mailora - AI-Powered Decentralized Web3 Messaging',
     description: 'End-to-End Encrypted, Zero-Knowledge Mailbox on BotChain with Native AI Superpowers.',

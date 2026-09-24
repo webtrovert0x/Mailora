@@ -2157,7 +2157,7 @@ export default function Dashboard() {
             {/* Description */}
             <div className="space-y-2 text-xs text-slate-300 leading-relaxed bg-white/[0.02] p-4 rounded-2xl border border-white/5">
               <p>
-                To enable zero-knowledge message routing and end-to-end encryption on <strong className="text-emerald-400">BotChain Testnet</strong>, every user must register a unique decentralized handle.
+                To enable zero-knowledge message routing and end-to-end encryption on <strong className="text-emerald-400">BOT Chain</strong>, every user must register a unique decentralized handle.
               </p>
               <div className="pt-2 flex items-center gap-2 text-[11px] text-slate-400">
                 <ShieldCheck size={14} className="text-emerald-400 shrink-0" />

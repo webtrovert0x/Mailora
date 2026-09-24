@@ -23,7 +23,7 @@ export async function POST(request: Request) {
       `<b>From:</b> ${senderAlias || 'Anonymous Sender'}\n` +
       `<b>Subject:</b> ${subject || 'Encrypted Mailora Message'}\n` +
       (summary ? `<b>Summary:</b> ${summary}\n\n` : '\n') +
-      `🔐 <i>End-to-End Encrypted on BotChain Testnet</i>\n` +
+      `🔐 <i>End-to-End Encrypted on BOT Chain</i>\n` +
       `<a href="https://mailora.app/dashboard">Open Mailora Mailbox</a>`;
 
     try {
