@@ -268,11 +268,14 @@ export default function Home() {
             <span>Decentralized AI Mailbox on BOT Chain (677)</span>
           </div>
           <div className="flex items-center gap-6 text-slate-400">
+            <a href="https://botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
+              BOT Chain Website
+            </a>
             <a href="https://scan.botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
               BOT Chain Explorer
             </a>
             <a href="https://rpc.botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
-              BOT Chain RPC
+              RPC Node
             </a>
           </div>
         </div>
