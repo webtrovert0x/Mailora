@@ -20,7 +20,16 @@ import {
   Fingerprint,
   ChevronRight,
   ExternalLink
-} from 'lucide-react'
+function BotChainLogo({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+    </svg>
+  );
+}
 
 export default function Home() {
   const { open } = useAppKit()
@@ -77,10 +86,10 @@ export default function Home() {
             href="https://scan.botchain.ai"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-1.5 text-xs text-slate-400 hover:text-emerald-400 transition-colors px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/5"
+            className="hidden md:flex items-center gap-1.5 text-xs text-slate-300 hover:text-emerald-400 transition-colors px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/5"
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            BOT Chain Mainnet (677)
+            <BotChainLogo className="w-3.5 h-3.5 text-emerald-400" />
+            <span>BOT Chain Mainnet (677)</span>
             <ExternalLink className="w-3 h-3 ml-0.5 text-slate-500" />
           </a>
 
@@ -113,7 +122,7 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 text-xs font-medium mb-8 backdrop-blur-xl shadow-inner"
         >
-          <Sparkles className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+          <BotChainLogo className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
           <span>Powered by BOT Chain & Integrated Neural AI</span>
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
         </motion.div>
@@ -265,13 +274,17 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <span className="font-bold text-slate-300">Mailora</span>
             <span>—</span>
-            <span>Decentralized AI Mailbox on BOT Chain (677)</span>
+            <span className="flex items-center gap-1.5">
+              <BotChainLogo className="w-3.5 h-3.5 text-emerald-400" />
+              Decentralized AI Mailbox on BOT Chain (677)
+            </span>
           </div>
           <div className="flex items-center gap-6 text-slate-400">
-            <a href="https://botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
-              BOT Chain Website
+            <a href="https://botchain.ai" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
+              <BotChainLogo className="w-3.5 h-3.5 text-emerald-400" />
+              BOT Chain
             </a>
-            <a href="https://scan.botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
+            <a href="https://scan.botchain.ai" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
               BOT Chain Explorer
             </a>
             <a href="https://rpc.botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
