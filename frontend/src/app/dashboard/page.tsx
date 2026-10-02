@@ -2331,25 +2331,27 @@ export default function Dashboard() {
                 <span>RPC URL:</span>
                 <span className="font-mono text-slate-300">https://rpc.botchain.ai</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between items-center">
                 <span>Official Website:</span>
                 <a
-                  href="https://botchain.ai"
+                  href="https://www.botchain.ai/en/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-emerald-400 hover:underline flex items-center gap-1"
+                  className="text-emerald-400 hover:underline flex items-center gap-1.5"
                 >
+                  <img src="/botchain.jpeg" alt="BOT Chain" className="w-3.5 h-3.5 rounded-full object-contain inline-block" />
                   botchain.ai <ExternalLink size={11} />
                 </a>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between items-center">
                 <span>Explorer:</span>
                 <a
                   href="https://scan.botchain.ai"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-emerald-400 hover:underline flex items-center gap-1"
+                  className="text-emerald-400 hover:underline flex items-center gap-1.5"
                 >
+                  <img src="/botchain.jpeg" alt="BOT Chain" className="w-3.5 h-3.5 rounded-full object-contain inline-block" />
                   scan.botchain.ai <ExternalLink size={11} />
                 </a>
               </div>

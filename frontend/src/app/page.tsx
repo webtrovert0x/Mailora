@@ -20,14 +20,15 @@ import {
   Fingerprint,
   ChevronRight,
   ExternalLink
+} from 'lucide-react'
+
 function BotChainLogo({ className = "w-4 h-4" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-      <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="12" cy="12" r="1.5" fill="currentColor" />
-    </svg>
+    <img 
+      src="/botchain.jpeg" 
+      alt="BOT Chain Logo" 
+      className={`rounded-full object-contain inline-block shrink-0 ${className}`} 
+    />
   );
 }
 
@@ -280,12 +281,13 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-6 text-slate-400">
-            <a href="https://botchain.ai" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
-              <BotChainLogo className="w-3.5 h-3.5 text-emerald-400" />
-              BOT Chain
+            <a href="https://www.botchain.ai/en/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-emerald-400 transition-colors">
+              <BotChainLogo className="w-4 h-4" />
+              <span>BOT Chain Website</span>
             </a>
-            <a href="https://scan.botchain.ai" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
-              BOT Chain Explorer
+            <a href="https://scan.botchain.ai" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-emerald-400 transition-colors">
+              <BotChainLogo className="w-4 h-4" />
+              <span>BOT Chain Explorer</span>
             </a>
             <a href="https://rpc.botchain.ai" target="_blank" rel="noreferrer" className="hover:text-emerald-400 transition-colors">
               RPC Node
